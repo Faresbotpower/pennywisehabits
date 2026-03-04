@@ -3,37 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PennyWiseHabits - Smart Money Habits Start Here</title>
-<meta name="description" content="Practical tips on budgeting, saving, and building wealth — no fluff, just what works.">
+<title>PennyWiseHabits — Smart Money Tips That Actually Work</title>
+<meta name="description" content="Practical personal finance tips, budgeting guides, and money-saving strategies to build wealth.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,Arial,sans-serif;background:#fff;color:#1a1a2e}
-nav{background:#1a1a2e;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
-nav a{color:#e94560;font-size:1.4em;font-weight:bold;text-decoration:none}
-nav ul{list-style:none;display:flex;gap:20px}
-nav ul a{color:#eee;font-size:0.95em}
-.hero{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:80px 30px;text-align:center}
-.hero h1{font-size:2.5em;margin-bottom:15px}
-.hero p{font-size:1.2em;color:#ccc;max-width:600px;margin:0 auto}
-.articles{max-width:800px;margin:40px auto;padding:0 20px}
-.articles h2{font-size:1.6em;margin-bottom:20px}
-.article-card{border:1px solid #eee;border-radius:8px;padding:20px;margin-bottom:15px;transition:box-shadow 0.2s}
-.article-card:hover{box-shadow:0 2px 12px rgba(0,0,0,0.1)}
-.article-card a{text-decoration:none;color:#1a1a2e;font-size:1.1em;font-weight:600}
-.article-card p{color:#666;margin-top:8px;font-size:0.9em}
-.tag{background:#1a1a2e;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.8em}
-footer{background:#1a1a2e;color:#888;text-align:center;padding:30px;margin-top:50px;font-size:0.85em}
+:root{--bg:#faf9f6;--text:#1a1a2e;--accent:#c9a227;--accent2:#1a1a2e;--card:#fff;--muted:#6b7280;--border:#e8e5df}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);background:#fff}
+.logo{font-family:'DM Serif Display',serif;font-size:1.5em;color:var(--accent2)}
+.logo span{color:var(--accent)}
+nav ul{list-style:none;display:flex;gap:30px}
+nav ul a{font-size:0.9em;font-weight:500;color:var(--muted);transition:color 0.2s}
+nav ul a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{padding:80px 40px;text-align:center;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+.hero-badge{display:inline-block;background:var(--accent);color:#fff;font-size:0.75em;font-weight:600;padding:6px 16px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:3.2em;line-height:1.15;margin-bottom:20px;max-width:700px;margin-left:auto;margin-right:auto}
+.hero p{font-size:1.15em;color:var(--muted);max-width:550px;margin:0 auto 30px}
+.hero-stats{display:flex;justify-content:center;gap:50px;margin-top:40px}
+.hero-stat{text-align:center}
+.hero-stat .num{font-family:'DM Serif Display',serif;font-size:2em;color:var(--accent)}
+.hero-stat .label{font-size:0.8em;color:var(--muted);margin-top:4px}
+
+/* ARTICLES */
+.section{max-width:900px;margin:0 auto;padding:60px 30px}
+.section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+.section-header h2{font-family:'DM Serif Display',serif;font-size:2em}
+.section-header .tag{font-size:0.85em;color:var(--accent);font-weight:600}
+
+.article-grid{display:grid;gap:20px}
+.article-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 30px;transition:all 0.25s ease;display:flex;justify-content:space-between;align-items:center}
+.article-card:hover{border-color:var(--accent);box-shadow:0 4px 20px rgba(201,162,39,0.08);transform:translateY(-2px)}
+.article-info{flex:1}
+.article-card h3{font-size:1.1em;font-weight:600;margin-bottom:6px}
+.article-card h3 a{transition:color 0.2s}
+.article-card h3 a:hover{color:var(--accent)}
+.article-meta{font-size:0.8em;color:var(--muted);display:flex;gap:15px;align-items:center}
+.article-type{background:var(--accent2);color:#fff;padding:3px 10px;border-radius:6px;font-size:0.75em;font-weight:600;letter-spacing:0.5px}
+.article-type.review{background:#2d6a4f}
+.arrow{font-size:1.4em;color:var(--border);transition:color 0.2s}
+.article-card:hover .arrow{color:var(--accent)}
+
+/* CATEGORIES */
+.categories{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:40px}
+.cat-pill{padding:8px 20px;border:1px solid var(--border);border-radius:20px;font-size:0.85em;font-weight:500;cursor:pointer;transition:all 0.2s}
+.cat-pill:hover,.cat-pill.active{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:40px;text-align:center;margin-top:60px}
+.footer-brand{font-family:'DM Serif Display',serif;font-size:1.3em;margin-bottom:10px}
+.footer-brand span{color:var(--accent)}
+footer p{font-size:0.8em;color:var(--muted)}
+
+@media(max-width:600px){
+  nav{padding:15px 20px}
+  .hero{padding:50px 20px}
+  .hero h1{font-size:2em}
+  .hero-stats{gap:25px}
+  .section{padding:40px 20px}
+  .article-card{flex-direction:column;align-items:flex-start}
+  .arrow{display:none}
+}
 </style>
 </head>
 <body>
-<nav><a href="/">PennyWiseHabits</a><ul><li><a href="/">Home</a></li><li><a href="#articles">Articles</a></li></ul></nav>
-<div class="hero"><h1>Smart Money Habits Start Here</h1><p>Practical tips on budgeting, saving, and building wealth — no fluff, just what works.</p></div>
-<div class="articles" id="articles"><h2>Latest Articles</h2>
-<div class="article-card"><a href="articles/how-to-save-for-a-house-down-payment.html">How To Save For A House Down Payment</a><p><span class="tag">Article</span></p></div>
-<div class="article-card"><a href="articles/best-high-yield-savings-accounts.html">Best High Yield Savings Accounts</a><p><span class="tag">Article</span></p></div>
-<div class="article-card"><a href="reviews/best-budgeting-apps-review.html">Best Budgeting Apps Review</a><p><span class="tag">Review</span></p></div>
+<nav>
+  <div class="logo">Penny<span>Wise</span>Habits</div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+  </ul>
+</nav>
 
+<div class="hero">
+  <div class="hero-badge">Personal Finance Made Simple</div>
+  <h1>Build Wealth With Smarter Money Habits</h1>
+  <p>No-nonsense guides on budgeting, saving, investing, and making your money work harder — updated daily.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num" id="article-count">0</div><div class="label">Articles</div></div>
+    <div class="hero-stat"><div class="num">3</div><div class="label">Categories</div></div>
+    <div class="hero-stat"><div class="num">Daily</div><div class="label">New Content</div></div>
+  </div>
 </div>
-<footer>&copy; 2026 pennywisehabits.com — All rights reserved.</footer>
+
+<div class="section" id="articles">
+  <div class="section-header">
+    <h2>Latest Articles</h2>
+    <span class="tag">Updated daily</span>
+  </div>
+  <div class="article-grid" id="article-grid">
+    <!-- Articles injected here -->
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">Penny<span>Wise</span>Habits</div>
+  <p>&copy; 2026 pennywisehabits.com — Smart money tips that actually work.</p>
+</footer>
+
+<script>
+// This gets replaced by deploy.py with actual article data
+const articles = [{"title": "How To Save For A House Down Payment", "link": "articles/how-to-save-for-a-house-down-payment.html", "type": "Article"}, {"title": "Best High Yield Savings Accounts", "link": "articles/best-high-yield-savings-accounts.html", "type": "Article"}, {"title": "Best Budgeting Apps Review", "link": "reviews/best-budgeting-apps-review.html", "type": "Review"}];
+const grid = document.getElementById('article-grid');
+document.getElementById('article-count').textContent = articles.length;
+if(articles.length === 0){
+  grid.innerHTML = '<div class="article-card"><div class="article-info"><h3>New articles coming soon!</h3><div class="article-meta">We publish fresh finance content daily. Check back soon.</div></div></div>';
+} else {
+  articles.forEach(a => {
+    grid.innerHTML += `<div class="article-card"><div class="article-info"><h3><a href="${a.link}">${a.title}</a></h3><div class="article-meta"><span class="article-type ${a.type === 'Review' ? 'review' : ''}">${a.type}</span></div></div><div class="arrow">&rarr;</div></div>`;
+  });
+}
+</script>
 </body>
 </html>
