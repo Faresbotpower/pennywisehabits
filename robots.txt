@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://pennywisehabits.com/sitemap.xml
+
+# RSS Feed: https://pennywisehabits.com/feed.xml
