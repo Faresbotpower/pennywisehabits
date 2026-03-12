@@ -80,17 +80,6 @@ nav ul a:hover{color:var(--text);background:var(--bg)}
 .article-info h4{font-size:0.9em;font-weight:600;line-height:1.4;color:var(--text)}
 .article-row:hover h4{color:var(--accent-dark)}
 .article-info .card-meta{font-size:0.75em}
-/* NEWSLETTER */
-.newsletter-section{background:linear-gradient(135deg,#1a1208 0%,#2d1f00 100%);border-radius:20px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:72px;position:relative;overflow:hidden}
-.newsletter-section::after{content:'';position:absolute;right:-80px;top:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(201,168,76,0.2),transparent 70%);pointer-events:none}
-.nl-eyebrow{font-size:0.72em;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
-.newsletter-section h2{font-family:'Playfair Display',serif;font-size:2em;font-weight:700;line-height:1.2;color:#fff;margin-bottom:12px}
-.newsletter-section p{color:rgba(255,255,255,0.65);line-height:1.7;font-size:0.95em}
-.nl-perks{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.nl-perk{font-size:0.88em;color:rgba(255,255,255,0.75);display:flex;align-items:center;gap:10px}
-.nl-perk::before{content:'✓';color:var(--accent);font-weight:700;font-size:1.1em;flex-shrink:0}
-.nl-cta{background:var(--accent);color:#fff;padding:15px 36px;border-radius:8px;font-weight:700;font-size:0.95em;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s}
-.nl-cta:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 10px 28px rgba(201,168,76,0.35)}
 /* FOOTER */
 footer{background:var(--text);color:rgba(255,255,255,0.7);padding:56px 48px 0;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px}
 .footer-brand{font-family:'Playfair Display',serif;font-size:1.2em;font-weight:900;color:#fff;margin-bottom:12px}
@@ -113,7 +102,6 @@ footer p{font-size:0.85em;line-height:1.7}
   .container{padding:0 20px}
   .featured-grid{grid-template-columns:1fr}
   .article-list{grid-template-columns:1fr}
-  .newsletter-section{grid-template-columns:1fr;padding:36px 24px}
   footer{grid-template-columns:1fr;padding:36px 20px}
   .footer-bottom{flex-direction:column;gap:6px;margin:0 -20px;padding:16px 20px}
 }
@@ -130,7 +118,7 @@ footer p{font-size:0.85em;line-height:1.7}
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="https://pennywiseweekly.beehiiv.com" target="_blank" class="nav-cta">Newsletter</a></li>
+    <li><a href="https://bsky.app/profile/smarthabitshq.bsky.social" target="_blank" class="nav-cta">Follow Us</a></li>
   </ul>
 </nav>
 
@@ -143,7 +131,7 @@ footer p{font-size:0.85em;line-height:1.7}
     <p>No fluff. No jargon. Practical strategies on budgeting, saving, and investing that actually move the needle.</p>
     <div class="hero-actions">
       <a href="#articles" class="btn-primary">Read Latest Articles →</a>
-      <a href="https://pennywiseweekly.beehiiv.com" target="_blank" class="btn-outline">Free Newsletter</a>
+      <a href="https://bsky.app/profile/smarthabitshq.bsky.social" target="_blank" class="btn-outline">Follow on Bluesky</a>
     </div>
   </div>
 </section>
@@ -167,21 +155,6 @@ footer p{font-size:0.85em;line-height:1.7}
     <div class="article-list" id="article-list"></div>
   </section>
 
-  <section class="newsletter-section">
-    <div>
-      <div class="nl-eyebrow">Free Weekly Newsletter</div>
-      <h2>Get Smarter About Money Every Week</h2>
-      <p>Join thousands of readers getting actionable money tips, budgeting hacks, and wealth-building strategies every Sunday morning.</p>
-    </div>
-    <div>
-      <div class="nl-perks">
-        <div class="nl-perk">Weekly money tips you can use immediately</div>
-        <div class="nl-perk">Exclusive budgeting templates and tools</div>
-        <div class="nl-perk">No spam — unsubscribe anytime</div>
-      </div>
-      <a href="https://pennywiseweekly.beehiiv.com" target="_blank" class="nl-cta">Subscribe Free →</a>
-    </div>
-  </section>
 </div>
 
 <footer>
@@ -193,7 +166,7 @@ footer p{font-size:0.85em;line-height:1.7}
     <h4>Content</h4>
     <a href="#articles">Articles</a>
     <a href="#reviews">Reviews</a>
-    <a href="https://pennywiseweekly.beehiiv.com" target="_blank">Newsletter</a>
+    <a href="https://bsky.app/profile/smarthabitshq.bsky.social" target="_blank">Bluesky</a>
   </div>
   <div class="footer-col">
     <h4>Site</h4>
@@ -208,7 +181,7 @@ footer p{font-size:0.85em;line-height:1.7}
 </footer>
 
 <script>
-const articles = [{"title": "Simple Investing Strategies for Beginners: Your Complete Guide to Building Wealth", "link": "articles/simple-investing-strategies-for-beginners.html", "type": "Article"}, {"title": "7 Best Budgeting Apps in 2026 (Tested and Reviewed)", "link": "reviews/best-budgeting-apps-review.html", "type": "Review"}, {"title": "7 Best Cashback Credit Cards in 2026 (Tested and Reviewed)", "link": "reviews/best-cashback-credit-cards-review.html", "type": "Review"}, {"title": "7 Best Debt Payoff Apps in 2026 (Tested and Reviewed)", "link": "reviews/best-debt-payoff-apps-review.html", "type": "Review"}, {"title": "7 Best Expense Tracker Apps in 2026 (Tested and Reviewed)", "link": "reviews/best-expense-tracker-apps-review.html", "type": "Review"}, {"title": "7 Best High Yield Savings Accounts in 2026 (Tested and Reviewed)", "link": "reviews/best-high-yield-savings-accounts-review.html", "type": "Review"}, {"title": "7 Best Investment Apps for Beginners in 2026 (Tested and Reviewed)", "link": "reviews/best-investment-apps-for-beginners-review.html", "type": "Review"}, {"title": "7 Best Money Management Tools in 2026 (Tested and Reviewed)", "link": "reviews/best-money-management-tools-review.html", "type": "Review"}, {"title": "7 Best Personal Finance Books in 2026 (Tested and Reviewed)", "link": "reviews/best-personal-finance-books-review.html", "type": "Review"}, {"title": "7 Best Side Hustle Platforms in 2026 (Tested and Reviewed)", "link": "reviews/best-side-hustle-platforms-review.html", "type": "Review"}, {"title": "7 Best Tax Software for Freelancers in 2026 (Tested and Reviewed)", "link": "reviews/best-tax-software-for-freelancers-review.html", "type": "Review"}, {"title": "Best High Yield Savings Accounts: Maximize Your Money in 2024", "link": "articles/best-high-yield-savings-accounts.html", "type": "Article"}, {"title": "Best Money Saving Challenges: 12 Proven Strategies to Boost Your Savings in 2024", "link": "articles/best-money-saving-challenges.html", "type": "Article"}, {"title": "Dollar Cost Averaging Explained Simply: Your Complete Guide to Smart Investing", "link": "articles/dollar-cost-averaging-explained-simply.html", "type": "Article"}, {"title": "How to Avoid Impulse Buying: A Complete Guide to Smart Spending Habits", "link": "articles/how-to-avoid-impulse-buying.html", "type": "Article"}, {"title": "How to Build Passive Income Streams: Your Complete Guide to Financial Freedom", "link": "articles/how-to-build-passive-income-streams.html", "type": "Article"}, {"title": "How to Create a Monthly Budget: Your Complete Guide to Financial Freedom", "link": "articles/how-to-create-a-monthly-budget.html", "type": "Article"}, {"title": "How to Lower Your Home Insurance Premiums: 13 Proven Strategies That Actually Work", "link": "articles/how-to-lower-your-home-insurance-premiums.html", "type": "Article"}, {"title": "How to Open a Brokerage Account: Your Complete Guide to Getting Started with Investing", "link": "articles/how-to-open-a-brokerage-account.html", "type": "Article"}, {"title": "How to Save for a House Down Payment: A Complete Guide to Homeownership", "link": "articles/how-to-save-for-a-house-down-payment.html", "type": "Article"}, {"title": "How to Save Money on Car Insurance: 17 Proven Strategies to Cut Your Premiums", "link": "articles/how-to-save-money-on-car-insurance.html", "type": "Article"}, {"title": "How to Save Money on Groceries: 25 Proven Strategies to Cut Your Food Budget in Half", "link": "articles/how-to-save-money-on-groceries.html", "type": "Article"}, {"title": "How to Set Financial Goals: Your Complete Guide to Building Wealth and Achieving Financial Freedom", "link": "articles/how-to-set-financial-goals.html", "type": "Article"}, {"title": "How to Start Investing in Your 20s: The Complete Guide to Building Wealth Early", "link": "articles/how-to-start-investing-in-your-20s.html", "type": "Article"}];
+const articles = [{"title": "7 Best Tax Software for Freelancers in 2026 (Tested and Reviewed)", "link": "reviews/best-tax-software-for-freelancers-review.html", "type": "Review"}, {"title": "7 Best Investment Apps for Beginners in 2026 (Tested and Reviewed)", "link": "reviews/best-investment-apps-for-beginners-review.html", "type": "Review"}, {"title": "7 Best Money Management Tools in 2026 (Tested and Reviewed)", "link": "reviews/best-money-management-tools-review.html", "type": "Review"}, {"title": "7 Best Personal Finance Books in 2026 (Tested and Reviewed)", "link": "reviews/best-personal-finance-books-review.html", "type": "Review"}, {"title": "7 Best Side Hustle Platforms in 2026 (Tested and Reviewed)", "link": "reviews/best-side-hustle-platforms-review.html", "type": "Review"}, {"title": "7 Best Budgeting Apps in 2026 (Tested and Reviewed)", "link": "reviews/best-budgeting-apps-review.html", "type": "Review"}, {"title": "7 Best Cashback Credit Cards in 2026 (Tested and Reviewed)", "link": "reviews/best-cashback-credit-cards-review.html", "type": "Review"}, {"title": "7 Best Debt Payoff Apps in 2026 (Tested and Reviewed)", "link": "reviews/best-debt-payoff-apps-review.html", "type": "Review"}, {"title": "7 Best Expense Tracker Apps in 2026 (Tested and Reviewed)", "link": "reviews/best-expense-tracker-apps-review.html", "type": "Review"}, {"title": "7 Best High Yield Savings Accounts in 2026 (Tested and Reviewed)", "link": "reviews/best-high-yield-savings-accounts-review.html", "type": "Review"}, {"title": "How to Save Money on Groceries: 25 Proven Strategies to Cut Your Food Budget in Half", "link": "articles/how-to-save-money-on-groceries.html", "type": "Article"}, {"title": "How to Set Financial Goals: Your Complete Guide to Building Wealth and Achieving Financial Freedom", "link": "articles/how-to-set-financial-goals.html", "type": "Article"}, {"title": "How to Start Investing in Your 20s: The Complete Guide to Building Wealth Early", "link": "articles/how-to-start-investing-in-your-20s.html", "type": "Article"}, {"title": "Simple Investing Strategies for Beginners: Your Complete Guide to Building Wealth", "link": "articles/simple-investing-strategies-for-beginners.html", "type": "Article"}, {"title": "How to Open a Brokerage Account: Your Complete Guide to Getting Started with Investing", "link": "articles/how-to-open-a-brokerage-account.html", "type": "Article"}, {"title": "How to Save for a House Down Payment: A Complete Guide to Homeownership", "link": "articles/how-to-save-for-a-house-down-payment.html", "type": "Article"}, {"title": "How to Save Money on Car Insurance: 17 Proven Strategies to Cut Your Premiums", "link": "articles/how-to-save-money-on-car-insurance.html", "type": "Article"}, {"title": "How to Avoid Impulse Buying: A Complete Guide to Smart Spending Habits", "link": "articles/how-to-avoid-impulse-buying.html", "type": "Article"}, {"title": "How to Build Passive Income Streams: Your Complete Guide to Financial Freedom", "link": "articles/how-to-build-passive-income-streams.html", "type": "Article"}, {"title": "How to Create a Monthly Budget: Your Complete Guide to Financial Freedom", "link": "articles/how-to-create-a-monthly-budget.html", "type": "Article"}, {"title": "How to Lower Your Home Insurance Premiums: 13 Proven Strategies That Actually Work", "link": "articles/how-to-lower-your-home-insurance-premiums.html", "type": "Article"}, {"title": "Dollar Cost Averaging Explained Simply: Your Complete Guide to Smart Investing", "link": "articles/dollar-cost-averaging-explained-simply.html", "type": "Article"}, {"title": "Best High Yield Savings Accounts: Maximize Your Money in 2024", "link": "articles/best-high-yield-savings-accounts.html", "type": "Article"}, {"title": "Best Money Saving Challenges: 12 Proven Strategies to Boost Your Savings in 2024", "link": "articles/best-money-saving-challenges.html", "type": "Article"}];
 
 function imgSeed(str) {
   let h = 5381;
