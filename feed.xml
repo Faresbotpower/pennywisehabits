@@ -5,7 +5,7 @@
     <link>https://pennywisehabits.com</link>
     <description>Latest articles and reviews from PennyWiseHabits</description>
     <language>en-us</language>
-    <lastBuildDate>2026-03-12</lastBuildDate>
+    <lastBuildDate>2026-03-13</lastBuildDate>
     <atom:link href="https://pennywisehabits.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>7 Best Tax Software for Freelancers in 2026 (Tested and Reviewed)</title>
@@ -20,6 +20,13 @@
       <description>The gig economy continues to thrive in 2026, with more people than ever seeking flexible ways to earn extra income. Whether you're looking to monetize...</description>
       <pubDate>2026-03-12</pubDate>
       <guid>https://pennywisehabits.com/reviews/best-side-hustle-platforms-review.html</guid>
+    </item>
+    <item>
+      <title>7 Best Personal Finance Podcasts in 2026 (Tested and Reviewed)</title>
+      <link>https://pennywisehabits.com/reviews/best-personal-finance-podcasts-review.html</link>
+      <description>After extensive listening and analysis, The Dave Ramsey Show takes our top spot for best overall personal finance podcast. With its daily format,...</description>
+      <pubDate>2026-03-13</pubDate>
+      <guid>https://pennywisehabits.com/reviews/best-personal-finance-podcasts-review.html</guid>
     </item>
     <item>
       <title>7 Best Personal Finance Books in 2026 (Tested and Reviewed)</title>
@@ -127,25 +134,18 @@
       <guid>https://pennywisehabits.com/articles/how-to-open-a-brokerage-account.html</guid>
     </item>
     <item>
+      <title>How to Negotiate a Raise at Work: A Complete Guide to Getting the Salary You Deserve</title>
+      <link>https://pennywisehabits.com/articles/how-to-negotiate-a-raise-at-work.html</link>
+      <description>Picture this: you've been excelling at your job for months or even years, consistently delivering results and taking on additional responsibilities. Yet...</description>
+      <pubDate>2026-03-13</pubDate>
+      <guid>https://pennywisehabits.com/articles/how-to-negotiate-a-raise-at-work.html</guid>
+    </item>
+    <item>
       <title>How to Lower Your Home Insurance Premiums: 13 Proven Strategies That Actually Work</title>
       <link>https://pennywisehabits.com/articles/how-to-lower-your-home-insurance-premiums.html</link>
       <description>Are you tired of watching your home insurance premiums climb higher each year? You're not alone. According to the Insurance Information Institute, the...</description>
       <pubDate>2026-03-11</pubDate>
       <guid>https://pennywisehabits.com/articles/how-to-lower-your-home-insurance-premiums.html</guid>
-    </item>
-    <item>
-      <title>How to Create a Monthly Budget: Your Complete Guide to Financial Freedom</title>
-      <link>https://pennywisehabits.com/articles/how-to-create-a-monthly-budget.html</link>
-      <description>Does the thought of creating a budget make your eyes glaze over? You're not alone. According to a 2023 survey by Bankrate, only 56% of Americans maintain...</description>
-      <pubDate>2026-03-11</pubDate>
-      <guid>https://pennywisehabits.com/articles/how-to-create-a-monthly-budget.html</guid>
-    </item>
-    <item>
-      <title>How to Build Passive Income Streams: Your Complete Guide to Financial Freedom</title>
-      <link>https://pennywisehabits.com/articles/how-to-build-passive-income-streams.html</link>
-      <description>Imagine waking up to find money in your bank account that you didn't actively work for the night before. This isn't a fantasy—it's the reality of passive...</description>
-      <pubDate>2026-03-11</pubDate>
-      <guid>https://pennywisehabits.com/articles/how-to-build-passive-income-streams.html</guid>
     </item>
   </channel>
 </rss>
